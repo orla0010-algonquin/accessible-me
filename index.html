@@ -1,7 +1,12 @@
+
+<ul class="skip-links">
+    <li><a href="#main-content">Skip to navigation</a></li>
+    <li><a href="#contentinfo">skip to the main content</a></li>
+</ul>
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head role="banner">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +19,19 @@
 
 <body>
   <div class="container">
-    <div class="site-header">
+    <div class="site-header" id="site-head">
       <h1>Jam Box Studios</h1>
       <div class="main-nav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+          <li><a href="#" aria-label="Go to the home page">Home</a></li>
+          <li><a href="#" aria-label="Go to the products page">Products</a></li>
+          <li><a href="#" aria-label="Go to the reservation page">Reservation</a></li>
+          <li><a href="#" aria-label="Go to the studio page">Studio</a></li>
         </ul>
       </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
+      <img src="http://placebacon.net/400/300" class="banner" alt="image of a bacon">
     </div>
-    <div class="main-content">
+    <div class="main-content" id="main-content">
       <h1>Welcome to Jam Box</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
@@ -59,10 +64,18 @@
         </form>
       </div>
     </div>
-    <div class="site-footer">
-      &copy; 2021 Jam Box Studios
-    </div>
+    <footer role="contentinfo" id="contentinfo">
+      <div class="site-footer">
+        &copy; 2021 Jam Box Studios
+      </div>
+      <ul>
+        <li><a href="#site-head">Go back to the top</a></li>
+    </ul>
+    </footer>
   </div>
 </body>
+
+
+
 
 </html>
